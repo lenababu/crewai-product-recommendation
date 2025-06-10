@@ -1,0 +1,19 @@
+product_research_task:
+  description: >
+    Research different products based on the user's comprehensive criteria: "{topic}".
+    Collect details such as price, mileage, safety features, performance, and customer reviews,
+    specifically focusing on aspects mentioned in the topic like fuel type, price range, and mileage limits.
+  expected_output: >
+    A structured list of at least 3 competitive products that align with the user's criteria from the topic,
+    including their key specifications and notable pros and cons.
+  agent: product_researcher
+
+product_recommendation_task:
+  description: >
+    Based on the researched products and the user's comprehensive criteria in the topic: "{topic}",
+    select the best product that meets the needs.
+    Explain clearly why the selected product is the best fit based on the user's preferences outlined in the topic.
+  expected_output: >
+    A detailed recommendation of the best product, with a clear explanation comparing it with other options
+    and highlighting how it addresses the criteria specified in the topic.
+  agent: recommendation_analyst
